@@ -1,9 +1,9 @@
-library custom_dropdown_data;
+library custom_dropdown;
 
-import 'package:custom_dropdown_data/src/custom_dropdown_data.dart';
-import 'package:custom_dropdown_data/src/custom_dropdown_data_model.dart';
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
+
+import '../custom_dropdown.dart';
 
 class CustomDropDown<T extends CustomDropdownData> extends StatelessWidget {
 
@@ -35,7 +35,7 @@ class CustomDropDown<T extends CustomDropdownData> extends StatelessWidget {
     );
   }
 
-  DropdownMenuItem<int> _buildDropdownItem(CustomDropdownDataModel model) {
+  DropdownMenuItem<int> _buildDropdownItem(CustomDropdownModel model) {
     return DropdownMenuItem<int>(
       child: Text(model.name),
       value: model.value,

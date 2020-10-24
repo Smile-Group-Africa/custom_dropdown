@@ -1,7 +1,7 @@
-library custom_dropdown_data;
+library custom_dropdown;
 
-import 'package:custom_dropdown_data/src/custom_dropdown_data_model.dart';
+import 'package:custom_dropdown/custom_dropdown.dart';
 
 abstract class CustomDropdownData {
-  CustomDropdownDataModel toDropdownDataModel();
+  CustomDropdownModel toDropdownDataModel();
 }

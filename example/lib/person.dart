@@ -1,7 +1,6 @@
-import 'package:custom_dropdown_data/custom_dropdown_data.dart';
+import 'package:custom_dropdown/custom_dropdown.dart';
 
-class Person extends CustomDropdownData {
-
+class Person extends CustomDropdownData{
   final int id;
   final String name;
 
@@ -11,5 +10,7 @@ class Person extends CustomDropdownData {
   });
 
   @override
-  CustomDropdownDataModel toDropdownDataModel() => CustomDropdownDataModel(name: this.name, value: this.id);
+  CustomDropdownModel toDropdownDataModel() {
+    return CustomDropdownModel(name: this.name, value: this.id);
+  }
 }

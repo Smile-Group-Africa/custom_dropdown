@@ -1,5 +1,5 @@
-name: custom_dropdown_data
-description: A new Flutter package.
+name: custom_dropdown
+description: A flutter dropdown field for displaying data objects.
 version: 0.0.1
 author:
 homepage:

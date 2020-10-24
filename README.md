@@ -1,14 +1,64 @@
-# custom_dropdown_data
 
-A new Flutter package.
+# CustomDropDown
+  
+A flutter dropdown field for displaying data objects.  
+  
+## Installation
+  
+Add the CustomDropDown package to pubspec.yaml dependencies
+```yaml
+custom_dropdown:
+    git:
+      url: https://github.com/Smile-Group-Africa/custom_dropdown_data.git
+```
 
-## Getting Started
+Import the package in your dart file
+```dart
+import 'package:custom_dropdown/custom_dropdown.dart';
+```
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+## Usage
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+Create data object
+
+```dart
+class Person extends CustomDropdownData{  
+  final int id;  
+  final String name;  
+  
+  Person({  
+    this.id,  
+    this.name,  
+  });  
+  
+  @override  
+  CustomDropdownModel toDropdownDataModel() {  
+    return CustomDropdownModel(name: this.name, value: this.id);  
+  }  
+}
+```
+
+Use dropdown widget with list of datas
+
+```dart
+List<Person> people = [  
+  Person(id: 1, name: "Boris"),  
+  Person(id: 2, name: "Didier"),  
+  Person(id: 3, name: "Innocent"),  
+  Person(id: 4, name: "Jean-François"),  
+  Person(id: 5, name: "Jean-Jacques"),  
+];
+
+...
+
+CustomDropDown(  
+  onChanged: (int id){  
+    print("selected id = $id");  
+  },  
+  items: people,  
+)
+```
+
+## API Reference
+
+## Contact

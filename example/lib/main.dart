@@ -1,4 +1,4 @@
-import 'package:custom_dropdown_data/custom_dropdown_data.dart';
+import 'package:custom_dropdown/custom_dropdown.dart';
 import 'package:example/person.dart';
 import 'package:flutter/material.dart';
 
@@ -35,7 +35,6 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: CustomDropDown(
-          hint: 'Selectionner personne',
           onChanged: (int modelId){
             print("selected model ID = $modelId");
           },
