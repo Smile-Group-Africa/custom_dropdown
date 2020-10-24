@@ -9,7 +9,7 @@ Add the CustomDropDown package to pubspec.yaml dependencies
 ```yaml
 custom_dropdown:
     git:
-      url: https://github.com/Smile-Group-Africa/custom_dropdown_data.git
+      url: https://github.com/Smile-Group-Africa/custom_dropdown.git
 ```
 
 Import the package in your dart file
