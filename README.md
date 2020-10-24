@@ -38,7 +38,7 @@ class Person extends CustomDropdownData{
 }
 ```
 
-Use dropdown widget with list of datas
+Use dropdown widget with list of data
 
 ```dart
 List<Person> people = [  
@@ -63,6 +63,6 @@ CustomDropDown(
 
 | Property | Default | Description | Type |
 |---|---|---|---|
-|`items`|`required`|List of datas|`List<T extends CustomDropdownData>`
+|`items`|`required`|List of data|`List<T extends CustomDropdownData>`
 |`onChanged`|`required`|Provide selected item value|`Function(int)`
 |`hint`|optional|A hint text|`String`
